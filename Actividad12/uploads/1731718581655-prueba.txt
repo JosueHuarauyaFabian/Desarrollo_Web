@@ -1,0 +1,10 @@
+Siguiente paso:
+Agrega las pruebas unitarias e integración completas.
+Genera un token JWT y prueba la API con autenticación.
+Verifica la documentación Swagger para cubrir todos los casos de uso de la API.
+
+{
+  "username": "admin",
+  "password": "password"
+}
+

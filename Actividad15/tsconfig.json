@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "module": "commonjs", // Compatible con Node.js y Jest
+    "target": "es6", // Compatible con ECMAScript 6
+    "strict": true, // Mantiene reglas estrictas para mejorar la calidad del código
+    "esModuleInterop": true, // Permite importar módulos ES (como node-fetch)
+    "skipLibCheck": true, // Omite la verificación de tipos en node_modules
+    "forceConsistentCasingInFileNames": true, // Asegura consistencia en mayúsculas/minúsculas
+    "outDir": "./dist", // Salida de archivos compilados
+    "rootDir": ".", // Raíz del proyecto
+    "resolveJsonModule": true, // Permite importar JSON directamente
+    "typeRoots": [
+      "./node_modules/@types"
+    ], // Incluye los tipos instalados en node_modules
+    "allowJs": true, // Permite archivos .js (útil para transición a TypeScript)
+    "noImplicitAny": true, // Desactiva variables sin tipo explícito
+    "types": [
+      "jest",
+      "node"
+    ], // Incluye los tipos para Jest y Node.js
+    "moduleResolution": "node" // Resolución de módulos para Node.js
+    ,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "noEmit": true,
+    "incremental": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "include": [
+    "mongoose", // Incluye la carpeta mongoose
+    "__tests__", // Incluye las pruebas
+    "pages", // Incluye las páginas del proyecto
+    "middleware" // Incluye middleware
+  ],
+  "exclude": [
+    "node_modules", // Excluye node_modules
+    "dist" // Excluye la salida compilada
+  ]
+}
